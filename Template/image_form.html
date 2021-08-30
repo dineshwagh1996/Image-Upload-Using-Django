@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    <title></title>
+    <style type="text/css">
+      h3{
+        color:blue;
+      }
+      container{
+        margin-left:250px;
+      }
+    </style>
+  </head>
+  <body style="background-color:lightcyan;">
+    <center><h3>Upload Files</h3></center>
+    <hr>
+    <form align="center"  method = "post" enctype="multipart/form-data" >
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-success">Upload</button>
+
+
+        <!-- <div class="form-group row">
+        <label class="col-sm-2 col-form-label">Image Name:</label>
+        <div class="col-sm-4">
+          {{ form.Name }}
+        </div>
+      </div>
+       <br>
+      <div class="form-group row">
+      <label class="col-sm-2 col-form-label"> Image Upload:</label>
+      <div class="col-sm-4">
+        {{ form.Image }}
+      </div>
+    </div>
+    <div class="container">
+      <button type="submit" class="btn btn-success">Upload</button>
+    </div> -->
+
+    </form>
+  </body>
+</html>
