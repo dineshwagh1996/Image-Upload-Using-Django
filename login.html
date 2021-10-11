@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form class="" action="/login" method="post" style="text-align:center;"
+      {% csrf_token %}
+      <hr>
+      <br>
+      <br>
+       <label for="email">Email</label><br>
+        <input type="email" name="Email" placeholder="User Email" required>
+        <br><br>
+        <label for="pwd">Password</label><br>
+        <input type="password" name="Password" placeholder="Password" required>
+        <br><br>
+        <input type="submit" class="btn btn-primary" name="submit">
+    </form>
+  </body>
+</html>
